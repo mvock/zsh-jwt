@@ -1,10 +1,10 @@
-usage="$0: Create a JSON Web Token
+usage="jwt: Create a JSON Web Token
 
 Syntax: jwt <payload> <key>
 
 Payload must be JSON-encoded. Key must be the plaintext encryption key.
 
-Example: $0 '"'{"name":"John Doe","role":"Global Administrator"}'"' \"\$uper-secret\""
+Example: jwt '"'{"name":"John Doe","role":"Global Administrator"}'"' \"\$uper-secret\""
 
 function jwt {
     alg="HS256"
